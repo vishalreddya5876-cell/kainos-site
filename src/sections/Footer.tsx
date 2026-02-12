@@ -1,5 +1,5 @@
 import { ScrollReveal } from '@/components/ScrollReveal';
-import { Instagram, MessageCircle, Mail } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 
 const navLinks = [
   { label: 'Home', href: '#hero' },
@@ -10,9 +10,11 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, label: 'Instagram', href: '#' },
-  { icon: MessageCircle, label: 'WhatsApp', href: '#' },
-  { icon: Mail, label: 'Email', href: 'mailto:hello@kainos.com' },
+  {
+    icon: MessageCircle,
+    label: 'WhatsApp',
+    href: 'https://wa.me/918599012345',
+  },
 ];
 
 export function Footer() {
@@ -73,22 +75,12 @@ export function Footer() {
           </ScrollReveal>
           
           {/* Contact */}
-          <ScrollReveal delay={0.2}>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
-            <ul className="space-y-3 text-gray-400">
-              <li>
-                <a 
-                  href="mailto:hello@kainos.com"
-                  className="hover:text-kainos-red transition-colors"
-                >
-                  hello@kainos.com
-                </a>
-              </li>
-              <li>Available on WhatsApp</li>
-              <li>Instagram: @kainos</li>
-            </ul>
-          </ScrollReveal>
-        </div>
+<ScrollReveal delay={0.2}>
+  <h4 className="text-white font-semibold mb-4">Contact</h4>
+  <ul className="space-y-3 text-gray-400">
+    <li>Available on WhatsApp</li>
+  </ul>
+</ScrollReveal>
         
         {/* Copyright */}
         <ScrollReveal delay={0.3}>

@@ -3,10 +3,10 @@ import { AnimatedCounter } from '@/components/AnimatedCounter';
 import { GlowText } from '@/components/GlowText';
 
 const stats = [
-  { value: 1598, label: 'Average photos per phone', suffix: '' },
-  { value: 19, label: 'Rarely look back at photos', suffix: '%' },
-  { value: 14, label: 'Forget moments without prints', suffix: '%' },
-  { value: 20, label: 'Lost memories from phone loss', suffix: '%' },
+  { value: '1598', label: 'Average photos per phone', suffix: '' },
+  { value: '19', label: 'Rarely look back at photos', suffix: '%' },
+  { value: '14', label: 'Forget moments without prints', suffix: '%' },
+  { value: '20', label: 'Lost memories from phone loss', suffix: '%' },
 ];
 
 export function Problem() {
@@ -73,7 +73,28 @@ export function Problem() {
                 <ScrollReveal key={stat.label} delay={0.3 + index * 0.1}>
                   <div className="bg-kainos-dark/50 border border-white/10 rounded-lg p-6 hover:border-kainos-red/30 transition-all duration-300 group">
                     <p className="text-3xl md:text-4xl font-bold text-kainos-red mb-2 group-hover:text-glow-red transition-all">
-                      <AnimatedCounter value={stat.value} suffix={stat.suffix} />
+                      {/* Stats Grid */}
+<div className="grid grid-cols-2 gap-4">
+  {stats.map((stat, index) => (
+    <ScrollReveal key={stat.label} delay={0.3 + index * 0.1}>
+      <div className="bg-kainos-dark/50 border border-white/10 rounded-lg p-6 hover:border-kainos-red/30 transition-all duration-300 group">
+        
+        <p className="text-3xl md:text-4xl font-bold text-kainos-red mb-2 group-hover:text-glow-red transition-all whitespace-nowrap">
+          <span className="tabular-nums">
+            {stat.value}
+            {stat.suffix}
+          </span>
+        </p>
+
+        <p className="text-sm text-gray-400">
+          {stat.label}
+        </p>
+
+      </div>
+    </ScrollReveal>
+  ))}
+</div>
+
                     </p>
                     <p className="text-sm text-gray-400">{stat.label}</p>
                   </div>
