@@ -9,14 +9,14 @@ const pricingTiers = [
     name: 'Single Magnet',
     price: '₹149',
     description: 'Perfect for individual memories',
-    features: ['2×2" size', 'High-quality print', 'Strong magnet backing', 'Free delivery'],
+    features: ['3×2" size', 'High-quality print', 'Strong magnet backing', 'Free delivery'],
     featured: false,
   },
   {
     name: 'Memory Collection',
     price: '₹349',
     description: 'Save ₹43 (11% discount)',
-    features: ['4 custom magnets', '2×2" size each', 'Premium print quality', 'Strong magnet backing', 'Free delivery'],
+    features: ['4 custom magnets', '3×2" size each', 'Premium print quality', 'Strong magnet backing', 'Free delivery'],
     featured: false,
   },
 ];

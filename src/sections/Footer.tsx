@@ -35,8 +35,9 @@ export function Footer() {
               KAINOS
             </a>
             <p className="text-gray-400 max-w-sm">
-              Where Memories Find Their Place. Transform digital moments into tangible treasures.
-            </p>
+  Thoughtfully crafted photo magnets that keep your memories alive.
+</p>
+
           </div>
 
           {/* Navigation */}

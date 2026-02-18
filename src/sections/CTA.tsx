@@ -21,17 +21,10 @@ export function CTA() {
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1] }}
-        >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Where Memories Find Their{' '}
-            <span className="text-kainos-red text-glow-red-strong">Place</span>
-          </h2>
-        </motion.div>
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+  Ready to turn moments into keepsakes?
+</h2>
+
         
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -78,18 +71,17 @@ export function CTA() {
 </a>
 
         </motion.div>
-        
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="border-t border-white/10 pt-8"
-        >
-          <p className="text-kainos-coral italic font-serif-jp text-xl">
-            "Cherishing Moments, One Magnet at a Time"
-          </p>
-        </motion.div>
+  initial={{ opacity: 0, scale: 0.95 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1] }}
+>
+  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+    Ready to Preserve Your Priceless Moments?
+  </h2>
+</motion.div>
+
         
         {/* Value Props */}
         <motion.div
