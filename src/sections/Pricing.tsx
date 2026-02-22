@@ -16,7 +16,7 @@ const pricingTiers = [
     name: 'Memory Collection',
     price: '₹349',
     description: 'Save ₹43 (11% discount)',
-    features: ['4 custom magnets', '3×2" size each', 'Premium print quality', 'Strong magnet backing', 'Free delivery'],
+    features: ['3 custom magnets', '3×2" size each', 'Premium print quality', 'Strong magnet backing', 'Free delivery'],
     featured: false,
   },
 ];
