@@ -59,7 +59,7 @@ export function Solution() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6">
-                <Badge className="bg-kainos-red text-white mb-2">Starting at ₹49</Badge>
+                <Badge className="bg-kainos-red text-white mb-2">Starting at ₹149</Badge>
               </div>
             </div>
           </ScrollReveal>
